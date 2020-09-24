@@ -1,19 +1,19 @@
-# Groupe n°19
+# Groupe n°7
 
 ## Réservé au cours
 
 ### Composition de l'équipe
 
-| Nom          | Prénom      | Email                         |
+| Prénom  | Nom   | Email                         |
 | -------------|-------------|-------------------------------|
-| ** | ** | ** |
-| ** | ** | ** |
-| ** | ** | ** |
-| ** | ** | ** |
-| ** | ** | ** |
-| ** | ** | ** |
+| Damien | Lu | ludamien2@gmail.com |
+| Rémi | Decouty | remi.decouty@ensiie.fr |
+| Romain | Loirs | romain.loirs@ensiie.fr |
+| Paul | Cathrine | paul.cathrine@ensiie.fr |
+| Tristan | Delort | tristan.delort@ensiie.fr |
+| Florian | Lecomte | florian.lecomte@ensiie.fr |
 
-### Sujet : 
+### Sujet : application mobile NASA Trend
 
-### Adresse du backlog :
+### Adresse du backlog (Trello) : 
 
