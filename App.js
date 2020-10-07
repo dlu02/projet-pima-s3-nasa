@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Image, StyleSheet } from 'react-native';
+import { Text, View, ScrollView, Image, StyleSheet } from 'react-native';
 import PrintPhoto from "./Photo.js";
 
 const API = 'https://api.nasa.gov/planetary/apod?'
@@ -12,7 +12,7 @@ const PrintTitle = props => (
 );
 
 const PrintDesc = props => (
-    <View>
+    <View style = {styles.descView} >
         <Text style = {styles.baseText}>{props.inputPhoto.explanation}</Text>
     </View>
 );
@@ -44,11 +44,11 @@ class App extends Component {
     //Update in Unity
     render() {
         return (
-            <View>
-                <PrintTitle inputPhoto={this.state.photo} />
+            <ScrollView>
                 <PrintPhoto inputPhoto={this.state.photo} />
+                <PrintTitle inputPhoto={this.state.photo} />
                 <PrintDesc inputPhoto={this.state.photo} />
-            </View>
+            </ScrollView>
         );
     }
 }
@@ -56,12 +56,16 @@ class App extends Component {
 const styles = StyleSheet.create({
     baseText: {
         fontFamily: 'normal', //to change i think
+        fontSize: 20,
     },
     titleText: {
         fontFamily: 'normal', //to change i think
         fontSize: 40,
         fontWeight: 'bold',
         textAlign: 'center',
+    },
+    descView: {
+        margin: 10,
     },
 });
 
