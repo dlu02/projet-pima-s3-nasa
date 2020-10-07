@@ -3,16 +3,17 @@ import { Text, View, ScrollView, Image, StyleSheet } from 'react-native';
 import PrintPhoto from "./Photo.js";
 
 const API = 'https://api.nasa.gov/planetary/apod?'
-const KEY = 'api_key=DEMO_KEY'
+const KEY = 'api_key=JsDc3pN9hPNPG3QD4Yg9gl2yt3EaJlGi4iLe0GgA'
+//nombre de requetes max de l'ordre de 10/20 sans api_key
 
 const PrintTitle = props => (
-    <View>
+    <View style = {styles.titleView}>
         <Text style = {styles.titleText}>{props.inputPhoto.title}</Text>
     </View>
 );
 
 const PrintDesc = props => (
-    <View style = {styles.descView} >
+    <View style = {styles.descView}>
         <Text style = {styles.baseText}>{props.inputPhoto.explanation}</Text>
     </View>
 );
@@ -44,11 +45,13 @@ class App extends Component {
     //Update in Unity
     render() {
         return (
-            <ScrollView>
+            <View style={{flex: 1}}>
                 <PrintPhoto inputPhoto={this.state.photo} />
-                <PrintTitle inputPhoto={this.state.photo} />
-                <PrintDesc inputPhoto={this.state.photo} />
-            </ScrollView>
+                <ScrollView>
+                    <PrintTitle inputPhoto={this.state.photo} />
+                    <PrintDesc inputPhoto={this.state.photo} />
+                </ScrollView>
+            </View>
         );
     }
 }
@@ -57,6 +60,7 @@ const styles = StyleSheet.create({
     baseText: {
         fontFamily: 'normal', //to change i think
         fontSize: 20,
+        textAlign: 'justify',
     },
     titleText: {
         fontFamily: 'normal', //to change i think
@@ -65,8 +69,12 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     descView: {
-        margin: 10,
+        margin: 30,
     },
+    titleView: {
+        margin: 10,
+        marginTop: 30,
+    }
 });
 
 export default App;
