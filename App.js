@@ -9,6 +9,7 @@ const KEY = 'api_key=JsDc3pN9hPNPG3QD4Yg9gl2yt3EaJlGi4iLe0GgA'
 const PrintTitle = props => (
     <View style = {styles.titleView}>
         <Text style = {styles.titleText}>{props.inputPhoto.title}</Text>
+        <Text style = {styles.dateText}>{props.inputPhoto.date}</Text>
     </View>
 );
 
@@ -68,11 +69,15 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
     },
+    dateText: {
+        textAlign: 'center',
+        fontSize: 20,
+        color: '#666',
+    },
     descView: {
         margin: 30,
     },
     titleView: {
-        margin: 10,
         marginTop: 30,
     }
 });
