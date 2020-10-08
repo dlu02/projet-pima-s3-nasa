@@ -3,10 +3,9 @@
 /*/
 
 
-# except 
+# except
 !App.js
 !README.md
 !Photo.js
 !/rapports_iteration/
 !.gitignore
-
