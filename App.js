@@ -28,6 +28,7 @@ class App extends Component {
 
     //query with date as input
     //to use when date input will be supported
+    // to call in componentDidMount. Add moment library
     /*getPhoto = date => {
         fetch(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=DEMO_KEY`)
             .then(response => response.json())
