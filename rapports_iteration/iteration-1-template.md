@@ -32,14 +32,15 @@
   
 ### Bilans des retours et des précédentes actions 
 *Quels sont les retours faits par l'équipe pendant la rétrospective? Quelles sont les actions qui ont apporté quelque chose ou non?*
-> Répondre ici
+> La formation à la technologie React-Native s'est bien déroulée. Les actions qui ont apporté quelque chose sont l'entraide commune lors de l'installation de l'environnement de développement React/Android Studio
 
 ### Actions prises pour la prochaine itération
 *Quelles sont les actions décidées par l'équipe pour la prochaine itération ?*
+> On continue ce que l'on avait prévu sur le trello
  
 ### Axes d'améliorations 
 *Quels sont les axes d'améliorations pour les personnes qui ont tenu les rôles de PO, SM et Dev sur la précédente itération?*
-> Répondre ici
+> Ajout de fonctionnalités : Implémentation du partage de photos sur les réseaux sociaux
 
 ## Prévisions de l'itération suivante  
 ### Évènements prévus  
