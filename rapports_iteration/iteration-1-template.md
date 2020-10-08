@@ -6,26 +6,27 @@
 
 |  &nbsp;                 | Itération précédente     |
 | -------------           |-------------             |
-| **Product Owner**       | **                       |
-| **Scrum Master**        | **                       |
+| **Product Owner**       | *Tristan Delort*         |
+| **Scrum Master**        | *Paul Cathrine*          |
 
 ## Bilan de l'itération précédente  
 ### Évènements 
 *Quels sont les évènements qui ont marqué l'itération précédente? Répertoriez ici les évènements qui ont eu un impact sur ce qui était prévu à l'itération précédente.*
-> Répondre ici
-
-*Exemple (à supprimer):*
-> *Pierre était en vacances toute la semaine.*
-> *Nous avons trouvé une erreur de conception qui nous a obligés à reprendre une partie du code pour pouvoir avancer.*
+> *L'installation de l'environnement de developpement React-Native a été plus longue que prévue. Nous avons dû adapter l'installation en raison des différents OS des développeurs de l'équipe.*
 
 ### Taux de complétion de l'itération  
 *Quel est le nombre d'éléments terminés par rapport au nombre total d'éléments prévu pour l'itération?*
-> Répondre ici
-*Exemple (à supprimer):*
-> *12 terminés / 18 prévues = 66%*
+> *6 terminés / 6 prévues = 100%*
 
 ### Liste des User Stories terminées
 *Quelles sont les User Stories qui ont été validées par le PO à la fin de l'itération ?*
+
+- [Tech] Le développeur prend en main la technologie React-Native.  
+- [Tech] Le développeur prend en main Android Studio.  
+- [Tech] Le développeur prend en main l'API Nasa "Astronomy Picture Of the Day".  
+- L'utilisateur clique sur le logo de l'application et l'application s'ouvre.  
+- L'utilisateur ouvre l'application et voit l'image du jour.  
+- L'utilisateur ouvre l'application et voit la description de l'image sous l'image.  
 
 ## Rétrospective de l'itération précédente
   
