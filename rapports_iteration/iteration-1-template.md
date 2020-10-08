@@ -44,15 +44,21 @@
 ## Prévisions de l'itération suivante  
 ### Évènements prévus  
 *Quels sont les évènements qui vont peut être impacter l'itération? Répertoriez ici les évènements que vous anticipez comme ayant un impact potentiel pour l'itération (absences, changement de cap, difficultés, etc.).*
-> Répondre ici
+> Les soutenances de stage de la semaine du 19/10 au 23/10 affecterons possiblement la séance de Jeudi 22/10.
 
 ### Titre des User Stories reportées  
 *Lister ici les éléments des itérations précédentes qui ont été reportés à l'itération suivante. Ces éléments ont dû être revus et corrigés par le PO.*
-> Répondre ici
+> Aucune
 
 ### Titre des nouvelles User Stories  
 *Lister ici les nouveaux éléments pour l'itération suivante. Ces éléments ont dû être revus et corrigés par le PO.*
-> Répondre ici
+
+- L'utilisateur rentre une date dans un calendrier en haut a droite pour voir l'image de cette date.  
+- L'utilisateur navigue vers la gauche (droite) voit et une image du jour précédent (suivant si elle existe).  
+- L'utilisateur voit la date sous le titre de l'image.  
+- L'utilisateur clique sur un menu contextuel ≡ en haut a gauche et voit plusieurs options.  
+- [Tech] Etudier le lien entre React Native et le SGBD.  
+- [Tech] Schématiser le SGBD et étudier les méthodes d'implémentation.  
 
 ## Confiance 
 ### Taux de confiance de l'équipe dans l'itération  
@@ -60,14 +66,14 @@
 
 |          	| :( 	| :&#124; 	| :) 	| :D 	|
 |:--------:	|:----:	|:----:	    |:----:	|:----:	|
-| Equipe 7 	|  *0* 	|  *0* 	    |  *0* 	|  *0* 	|
+| Equipe 7 	|  *0* 	|  *0* 	    |  *1* 	|  *5* 	|
 
 ### Taux de confiance de l'équipe pour la réalisation du projet 
 *Remplir le tableau sachant que :D est une confiance totale dans le fait de réaliser le projet. Mettre le nombre de votes dans chacune des cases. Expliquer en cas de besoin.*
 
 |          	| :( 	| :&#124; 	| :) 	| :D 	|
 |:--------:	|:----:	|:----:	    |:----:	|:----:	|
-| Equipe 7 	|  *0* 	|  *0* 	    |  *0* 	|  *0* 	|
+| Equipe 7 	|  *0* 	|  *0* 	    |  *1* 	|  *5* 	|
 
  
  
