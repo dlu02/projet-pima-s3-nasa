@@ -1,7 +1,7 @@
 # Rapport d'itération  
 *Ce rapport est à fournir pour chaque équipe au moment du changement d'itération.*
 
-## Composition de l'équipe 
+## Composition de l'équipe
 *Remplir ce tableau avec la composition de l'équipe et les rôles.*
 
 |  &nbsp;                 | Itération précédente     |
@@ -10,7 +10,7 @@
 | **Scrum Master**        | *Paul Cathrine*          |
 
 ## Bilan de l'itération précédente  
-### Évènements 
+### Évènements
 *Quels sont les évènements qui ont marqué l'itération précédente? Répertoriez ici les évènements qui ont eu un impact sur ce qui était prévu à l'itération précédente.*
 > *L'installation de l'environnement de developpement React-Native a été plus longue que prévue. Nous avons dû adapter l'installation en raison des différents OS des développeurs de l'équipe.*
 
@@ -29,16 +29,16 @@
 - L'utilisateur ouvre l'application et voit la description de l'image sous l'image.  
 
 ## Rétrospective de l'itération précédente
-  
-### Bilans des retours et des précédentes actions 
+
+### Bilans des retours et des précédentes actions
 *Quels sont les retours faits par l'équipe pendant la rétrospective? Quelles sont les actions qui ont apporté quelque chose ou non?*
 > La formation à la technologie React-Native s'est bien déroulée. Les actions qui ont apporté quelque chose sont l'entraide commune lors de l'installation de l'environnement de développement React/Android Studio
 
 ### Actions prises pour la prochaine itération
 *Quelles sont les actions décidées par l'équipe pour la prochaine itération ?*
 > On continue ce que l'on avait prévu sur le trello
- 
-### Axes d'améliorations 
+
+### Axes d'améliorations
 *Quels sont les axes d'améliorations pour les personnes qui ont tenu les rôles de PO, SM et Dev sur la précédente itération?*
 > Ajout de fonctionnalités : Implémentation du partage de photos sur les réseaux sociaux
 
@@ -61,7 +61,7 @@
 - [Tech] Etudier le lien entre React Native et le SGBD.  
 - [Tech] Schématiser le SGBD et étudier les méthodes d'implémentation.  
 
-## Confiance 
+## Confiance
 ### Taux de confiance de l'équipe dans l'itération  
 *Remplir le tableau sachant que :D est une confiance totale dans le fait de livrer les éléments de l'itération. Mettre le nombre de votes dans chacune des cases. Expliquer en cas de besoin.*
 
@@ -69,12 +69,9 @@
 |:--------:	|:----:	|:----:	    |:----:	|:----:	|
 | Equipe 7 	|  *0* 	|  *0* 	    |  *1* 	|  *5* 	|
 
-### Taux de confiance de l'équipe pour la réalisation du projet 
+### Taux de confiance de l'équipe pour la réalisation du projet
 *Remplir le tableau sachant que :D est une confiance totale dans le fait de réaliser le projet. Mettre le nombre de votes dans chacune des cases. Expliquer en cas de besoin.*
 
 |          	| :( 	| :&#124; 	| :) 	| :D 	|
 |:--------:	|:----:	|:----:	    |:----:	|:----:	|
 | Equipe 7 	|  *0* 	|  *0* 	    |  *1* 	|  *5* 	|
-
- 
- 
