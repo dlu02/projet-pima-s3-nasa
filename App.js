@@ -1,5 +1,10 @@
+//React Native
 import React, { Component } from 'react';
-import { Text, View, ScrollView, Image, StyleSheet } from 'react-native';
+import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, Button } from 'react-native';
+//Third Party Modules
+import moment from "moment"; //format date and get curr date
+import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';//detect swipe gestures
+//Our Modules
 import PrintPhoto from "./Photo.js";
 
 const API = 'https://api.nasa.gov/planetary/apod?'
@@ -20,40 +25,81 @@ const PrintDesc = props => (
 );
 
 class App extends Component {
-
-    //attributes
     state = {
+        date: moment(),
         photo : ""
-    };
+    }
+
+    formatDate = moment => {
+        let y = moment.year();
+        let m = moment.month() + 1; /* 0 indexed months */
+        let d = moment.date();
+        return `${y}-${m}-${d}`;
+    }
+
+    setDate(moment) {
+        this.setState({date: moment});
+        //date changed => update photo
+        this.getPhoto(this.formatDate(moment));
+    }
+
+    getDate() {
+        return moment(this.state.date); //cloning the currDate
+    }
 
     //query with date as input
-    //to use when date input will be supported
-    // to call in componentDidMount. Add moment library
-    /*getPhoto = date => {
-        fetch(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=DEMO_KEY`)
+    getPhoto = date => {
+        fetch(API + `date=${date}&` + KEY)
             .then(response => response.json())
             .then(photoData => this.setState({ photo: photoData }))
-            .catch((error) => {console.error(error);} );
-    };*/
+            .catch((error) => {console.error(error);console.log("Probleme dans l'api call");} );
+    }
 
-    //run when Component is mounted in the app tree (start in Unity)
     componentDidMount() {
-        fetch(API + /*add query here*/"" + KEY)
-            .then((response) => response.json() )
-            .then((photoData) => this.setState({ photo: photoData }))
-            .catch((error) => {console.error(error);} );
-    };
+        this.setDate(moment());
+    }
 
-    //Update in Unity
+    //finger go right to left on the screen
+    swipeLeft() {
+        let currDate = this.getDate();
+        let newDate = moment.min(moment(), currDate.add(1,'days'));
+        this.setDate(newDate);
+    }
+
+    //finger go left to right on the screen
+    swipeRight() {
+        let currDate = this.getDate();
+        this.setDate(currDate.subtract(1,'days'));
+    }
+
     render() {
+        const config = {
+            velocityThreshold: 0.2,
+            directionalOffsetThreshold: 80
+        };
         return (
-            <View style={{flex: 1}}>
-                <PrintPhoto inputPhoto={this.state.photo} />
-                <ScrollView>
-                    <PrintTitle inputPhoto={this.state.photo} />
-                    <PrintDesc inputPhoto={this.state.photo} />
-                </ScrollView>
-            </View>
+            <GestureRecognizer
+                onSwipeLeft={(state) => this.swipeLeft()}
+                onSwipeRight={(state) => this.swipeRight()}
+                style={{flex:1}}
+                config = {config}
+                >
+                <View style={{flex: 1}}>
+                    <PrintPhoto inputPhoto={this.state.photo} />
+                    <ScrollView>
+                        <PrintTitle inputPhoto={this.state.photo} />
+                        <PrintDesc inputPhoto={this.state.photo} />
+                    </ScrollView>
+                    <View style={styles.buttonView}>
+                        <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeRight()}>
+                            <Text style={{fontSize: 30}}>{'<'}</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeLeft()}>
+                            <Text style={{fontSize: 30}}>{'>'}</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+            </GestureRecognizer>
         );
     }
 }
@@ -80,7 +126,21 @@ const styles = StyleSheet.create({
     },
     titleView: {
         marginTop: 30,
-    }
+    },
+    buttonView: {
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+    },
+    sideButtons: {
+        justifyContent: 'center',
+        height: 50,
+    },
 });
 
 export default App;

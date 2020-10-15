@@ -16,3 +16,13 @@
 ### Sujet : application mobile NASA Trend
 
 ### Adresse du backlog (Trello) : https://trello.com/b/mSPkzNk6
+
+## Modules ajoutés
+
+```bash
+# Moment.js pour le formatage (et la récupération) des dates  
+npm install moment --save
+
+# Pour la detection des swipes
+nmp i -S react-native-swipe-gestures
+```
