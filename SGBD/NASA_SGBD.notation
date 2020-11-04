@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_oDz9QB6EEeu3vta0FjwZNA" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_p-e6MB6EEeu3vta0FjwZNA" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_p-h9gB6EEeu3vta0FjwZNA" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_p-ikkB6EEeu3vta0FjwZNA" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_p-ikkR6EEeu3vta0FjwZNA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_p-ikkh6EEeu3vta0FjwZNA" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_Ad0RMB6JEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_hzbAcB6IEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ad0RMR6JEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Ad04QB6JEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_nlDn4B6IEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ad04QR6JEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Ad04Qh6JEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#__mC7sB6IEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ad04Qx6JEeu3vta0FjwZNA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_p-ikkx6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_p-jLoB6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_p-jLoR6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p-jLoh6EEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_p-jLox6EEeu3vta0FjwZNA" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_p-jLpB6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_p-jLpR6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_p-jLph6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p-jLpx6EEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_p-jLqB6EEeu3vta0FjwZNA" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_p-jLqR6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_p-jLqh6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_p-jLqx6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p-jLrB6EEeu3vta0FjwZNA"/>
+    </children>
+    <element xmi:type="uml:Class" href="NASA_SGBD.uml#_p-VwQB6EEeu3vta0FjwZNA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p-e6MR6EEeu3vta0FjwZNA" x="740" y="60" width="201" height="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_qny88B6EEeu3vta0FjwZNA" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_qnzkAB6EEeu3vta0FjwZNA" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_qnzkAR6EEeu3vta0FjwZNA" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_qnzkAh6EEeu3vta0FjwZNA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_qnzkAx6EEeu3vta0FjwZNA" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_wp3a0B6JEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_bRd54B6JEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wp3a0R6JEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_wp4B4B6JEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_vjSNQB6JEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wp4B4R6JEeu3vta0FjwZNA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_qnzkBB6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_qnzkBR6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_qnzkBh6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qnzkBx6EEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_qnzkCB6EEeu3vta0FjwZNA" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_qnzkCR6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_qnzkCh6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_qnzkCx6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qnzkDB6EEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_qnzkDR6EEeu3vta0FjwZNA" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_qnzkDh6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_qnzkDx6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_qnzkEB6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qnzkER6EEeu3vta0FjwZNA"/>
+    </children>
+    <element xmi:type="uml:Class" href="NASA_SGBD.uml#_qnxHwB6EEeu3vta0FjwZNA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qny88R6EEeu3vta0FjwZNA" x="760" y="240" width="160" height="121"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_q164gB6EEeu3vta0FjwZNA" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_q164gh6EEeu3vta0FjwZNA" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_q164gx6EEeu3vta0FjwZNA" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_q164hB6EEeu3vta0FjwZNA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_q164hR6EEeu3vta0FjwZNA" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_6kRHEB6MEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_NaMgsB6MEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6kRHER6MEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_6kRuIB6MEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_vc-pkB6MEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6kRuIR6MEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_6kRuIh6MEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_50YiQB6MEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6kRuIx6MEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_wHhl8B6NEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_sfsjoB6NEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wHhl8R6NEeu3vta0FjwZNA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_q164hh6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_q164hx6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_q164iB6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q164iR6EEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_q164ih6EEeu3vta0FjwZNA" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_q164ix6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_q164jB6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_q164jR6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q164jh6EEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_q17fkB6EEeu3vta0FjwZNA" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_q17fkR6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_q17fkh6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_q17fkx6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q17flB6EEeu3vta0FjwZNA"/>
+    </children>
+    <element xmi:type="uml:Class" href="NASA_SGBD.uml#_q15DUB6EEeu3vta0FjwZNA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q164gR6EEeu3vta0FjwZNA" x="460" y="240" width="181" height="141"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_rDcXIB6EEeu3vta0FjwZNA" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_rDc-MB6EEeu3vta0FjwZNA" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_rDc-MR6EEeu3vta0FjwZNA" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rDdlQB6EEeu3vta0FjwZNA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_rDdlQR6EEeu3vta0FjwZNA" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_EjszYB6HEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_BWi64B6HEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_EjszYR6HEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_ybn-QB6HEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_pgOwkB6HEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ybn-QR6HEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_DtXL0B6IEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_Cw-cEB6IEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DtXy4B6IEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_VTmCsB6IEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_SFw0wB6IEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_VTmCsR6IEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_X3atgB6MEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_W6t0sB6MEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_X3atgR6MEeu3vta0FjwZNA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_rDdlQh6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_rDdlQx6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_rDdlRB6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rDdlRR6EEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_rDdlRh6EEeu3vta0FjwZNA" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_rDdlRx6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_rDdlSB6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_rDdlSR6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rDdlSh6EEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_rDdlSx6EEeu3vta0FjwZNA" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_rDdlTB6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_rDdlTR6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_rDdlTh6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rDdlTx6EEeu3vta0FjwZNA"/>
+    </children>
+    <element xmi:type="uml:Class" href="NASA_SGBD.uml#_rDZT0B6EEeu3vta0FjwZNA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rDcXIR6EEeu3vta0FjwZNA" x="120" y="180" width="173" height="161"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_rcUKIB6EEeu3vta0FjwZNA" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_rcUxMB6EEeu3vta0FjwZNA" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_rcUxMR6EEeu3vta0FjwZNA" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rcUxMh6EEeu3vta0FjwZNA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_rcUxMx6EEeu3vta0FjwZNA" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_jaaaIB6NEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_jaWIsB6NEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jaaaIR6NEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_iW5usB6NEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_iWthcB6NEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_iW5usR6NEeu3vta0FjwZNA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_i4L20B6NEeu3vta0FjwZNA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_i4HlYB6NEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_i4L20R6NEeu3vta0FjwZNA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_rcUxNB6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_rcUxNR6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_rcUxNh6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rcUxNx6EEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_rcUxOB6EEeu3vta0FjwZNA" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_rcUxOR6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_rcUxOh6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_rcUxOx6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rcUxPB6EEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_rcUxPR6EEeu3vta0FjwZNA" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_rcUxPh6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_rcUxPx6EEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_rcUxQB6EEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rcUxQR6EEeu3vta0FjwZNA"/>
+    </children>
+    <element xmi:type="uml:Class" href="NASA_SGBD.uml#_rcS8AB6EEeu3vta0FjwZNA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rcUKIR6EEeu3vta0FjwZNA" x="460" y="40" width="160" height="121"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ayZqMB6HEeu3vta0FjwZNA" type="DataType_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_aya4UB6HEeu3vta0FjwZNA" type="DataType_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_aya4UR6HEeu3vta0FjwZNA" type="DataType_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_aya4Uh6HEeu3vta0FjwZNA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_aya4Ux6HEeu3vta0FjwZNA" type="DataType_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_hSlZsB6HEeu3vta0FjwZNA" type="Property_DataTypeAttributeLabel">
+        <element xmi:type="uml:Property" href="NASA_SGBD.uml#_gYvAkB6HEeu3vta0FjwZNA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hSlZsR6HEeu3vta0FjwZNA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_aya4VB6HEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_aya4VR6HEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_aya4Vh6HEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aya4Vx6HEeu3vta0FjwZNA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_aybfYB6HEeu3vta0FjwZNA" type="DataType_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_aybfYR6HEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_aybfYh6HEeu3vta0FjwZNA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_aybfYx6HEeu3vta0FjwZNA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aybfZB6HEeu3vta0FjwZNA"/>
+    </children>
+    <element xmi:type="uml:DataType" href="NASA_SGBD.uml#_ayXN8B6HEeu3vta0FjwZNA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ayaRQB6HEeu3vta0FjwZNA" height="81"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_EApz4B6LEeu3vta0FjwZNA" type="Comment_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_EApz4h6LEeu3vta0FjwZNA" type="Comment_BodyLabel"/>
+    <element xmi:type="uml:Comment" href="NASA_SGBD.uml#_EAolwB6LEeu3vta0FjwZNA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EApz4R6LEeu3vta0FjwZNA" x="840" y="380" width="141"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ZyU7AB6MEeu3vta0FjwZNA" type="Comment_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ZyViEB6MEeu3vta0FjwZNA" type="Comment_BodyLabel"/>
+    <element xmi:type="uml:Comment" href="NASA_SGBD.uml#_ZyTs4B6MEeu3vta0FjwZNA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZyU7AR6MEeu3vta0FjwZNA" x="60" y="380" width="121" height="21"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ah0BwB6NEeu3vta0FjwZNA" type="Comment_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ah0o0B6NEeu3vta0FjwZNA" type="Comment_BodyLabel"/>
+    <element xmi:type="uml:Comment" href="NASA_SGBD.uml#_ahzasB6NEeu3vta0FjwZNA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ah0BwR6NEeu3vta0FjwZNA" x="200" width="81"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yB3ywB6NEeu3vta0FjwZNA" type="Comment_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yB3ywh6NEeu3vta0FjwZNA" type="Comment_BodyLabel"/>
+    <element xmi:type="uml:Comment" href="NASA_SGBD.uml#_yB2koB6NEeu3vta0FjwZNA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yB3ywR6NEeu3vta0FjwZNA" x="340" y="380" width="101" height="61"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_oDz9QR6EEeu3vta0FjwZNA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_oDz9Qh6EEeu3vta0FjwZNA"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_oDz9Qx6EEeu3vta0FjwZNA" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="NASA_SGBD.uml#_n8Rx4B6EEeu3vta0FjwZNA"/>
+  </styles>
+  <element xmi:type="uml:Model" href="NASA_SGBD.uml#_n8Rx4B6EEeu3vta0FjwZNA"/>
+  <edges xmi:type="notation:Connector" xmi:id="_y7uWcB6OEeu3vta0FjwZNA" type="Comment_AnnotatedElementEdge" source="_EApz4B6LEeu3vta0FjwZNA" target="_qny88B6EEeu3vta0FjwZNA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_y7uWcR6OEeu3vta0FjwZNA"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_y7uWch6OEeu3vta0FjwZNA" points="[940, 320, -643984, -643984]$[920, 320, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y8krAB6OEeu3vta0FjwZNA" id="(0.0,0.45977011494252873)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y8krAR6OEeu3vta0FjwZNA" id="(0.375,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_zwTOAB6OEeu3vta0FjwZNA" type="Comment_AnnotatedElementEdge" source="_yB3ywB6NEeu3vta0FjwZNA" target="_q164gB6EEeu3vta0FjwZNA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_zwTOAR6OEeu3vta0FjwZNA"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zwTOAh6OEeu3vta0FjwZNA" points="[540, 380, -643984, -643984]$[520, 381, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zw65EB6OEeu3vta0FjwZNA" id="(1.0,0.39215686274509803)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zw65ER6OEeu3vta0FjwZNA" id="(0.3314917127071823,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_08cRAB6OEeu3vta0FjwZNA" type="Comment_AnnotatedElementEdge" source="_ah0BwB6NEeu3vta0FjwZNA" target="_rcUKIB6EEeu3vta0FjwZNA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_08cRAR6OEeu3vta0FjwZNA"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_08cRAh6OEeu3vta0FjwZNA" points="[441, 60, -643984, -643984]$[460, 60, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_09TMoB6OEeu3vta0FjwZNA" id="(1.0,0.5128205128205128)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_09TMoR6OEeu3vta0FjwZNA" id="(0.0,0.3305785123966942)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_HKO3IB6PEeu3vta0FjwZNA" type="Association_Edge" source="_rDcXIB6EEeu3vta0FjwZNA" target="_q164gB6EEeu3vta0FjwZNA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HKO3Ix6PEeu3vta0FjwZNA" type="Association_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_J3tKAB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HKO3JB6PEeu3vta0FjwZNA" x="2" y="-17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HKPeMB6PEeu3vta0FjwZNA" type="Association_NameLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_J4B6IB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HKPeMR6PEeu3vta0FjwZNA" x="1" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HKPeMh6PEeu3vta0FjwZNA" type="Association_TargetRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_J4iQcB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HKPeMx6PEeu3vta0FjwZNA" x="26" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HKPeNB6PEeu3vta0FjwZNA" type="Association_SourceRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_J45c0B6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HKPeNR6PEeu3vta0FjwZNA" x="-26" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HKPeNh6PEeu3vta0FjwZNA" type="Association_SourceMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_J5SeYB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HKPeNx6PEeu3vta0FjwZNA" x="12" y="7"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HKPeOB6PEeu3vta0FjwZNA" type="Association_TargetMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_J5qR0B6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HKPeOR6PEeu3vta0FjwZNA" x="-27" y="-18"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HKO3IR6PEeu3vta0FjwZNA"/>
+    <element xmi:type="uml:Association" href="NASA_SGBD.uml#_HJ11kB6PEeu3vta0FjwZNA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HKO3Ih6PEeu3vta0FjwZNA" points="[293, 260, -643984, -643984]$[360, 260, -643984, -643984]$[360, 300, -643984, -643984]$[460, 300, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HLFywB6PEeu3vta0FjwZNA" id="(1.0,0.4968944099378882)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HLFywR6PEeu3vta0FjwZNA" id="(0.0,0.425531914893617)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_H0EeUB6PEeu3vta0FjwZNA" type="Association_Edge" source="_rDcXIB6EEeu3vta0FjwZNA" target="_rcUKIB6EEeu3vta0FjwZNA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_H0EeUx6PEeu3vta0FjwZNA" type="Association_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_KisnwB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H0EeVB6PEeu3vta0FjwZNA" x="-2" y="-17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H0EeVR6PEeu3vta0FjwZNA" type="Association_NameLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_KjFCQB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H0EeVh6PEeu3vta0FjwZNA" y="19"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H0EeVx6PEeu3vta0FjwZNA" type="Association_TargetRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_KjkKcB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H0EeWB6PEeu3vta0FjwZNA" x="33" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H0EeWR6PEeu3vta0FjwZNA" type="Association_SourceRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_KkL1gB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H0EeWh6PEeu3vta0FjwZNA" x="-33" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H0EeWx6PEeu3vta0FjwZNA" type="Association_SourceMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_Kk0HoB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H0EeXB6PEeu3vta0FjwZNA" x="12" y="-13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H0EeXR6PEeu3vta0FjwZNA" type="Association_TargetMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_KlbLoB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H0EeXh6PEeu3vta0FjwZNA" x="-36" y="-13"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_H0EeUR6PEeu3vta0FjwZNA"/>
+    <element xmi:type="uml:Association" href="NASA_SGBD.uml#_Hzl9MB6PEeu3vta0FjwZNA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_H0EeUh6PEeu3vta0FjwZNA" points="[293, 220, -643984, -643984]$[360, 220, -643984, -643984]$[360, 100, -643984, -643984]$[460, 100, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H1W3wB6PEeu3vta0FjwZNA" id="(1.0,0.2484472049689441)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H1W3wR6PEeu3vta0FjwZNA" id="(0.0,0.49586776859504134)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_hDmo4B6PEeu3vta0FjwZNA" type="Comment_AnnotatedElementEdge" source="_ZyU7AB6MEeu3vta0FjwZNA" target="_rDcXIB6EEeu3vta0FjwZNA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_hDmo4R6PEeu3vta0FjwZNA"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hDmo4h6PEeu3vta0FjwZNA" points="[160, 380, -643984, -643984]$[160, 341, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hEahMB6PEeu3vta0FjwZNA" id="(0.8264462809917356,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hEahMR6PEeu3vta0FjwZNA" id="(0.23121387283236994,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ps9rYB6PEeu3vta0FjwZNA" type="Association_Edge" source="_p-e6MB6EEeu3vta0FjwZNA" target="_rcUKIB6EEeu3vta0FjwZNA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ps9rYx6PEeu3vta0FjwZNA" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ps9rZB6PEeu3vta0FjwZNA" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ps9rZR6PEeu3vta0FjwZNA" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ps9rZh6PEeu3vta0FjwZNA" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ps9rZx6PEeu3vta0FjwZNA" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ps-ScB6PEeu3vta0FjwZNA" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ps-ScR6PEeu3vta0FjwZNA" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ps-Sch6PEeu3vta0FjwZNA" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ps-Scx6PEeu3vta0FjwZNA" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ps-SdB6PEeu3vta0FjwZNA" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ps-SdR6PEeu3vta0FjwZNA" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ps-Sdh6PEeu3vta0FjwZNA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ps9rYR6PEeu3vta0FjwZNA"/>
+    <element xmi:type="uml:Association" href="NASA_SGBD.uml#_psoUMB6PEeu3vta0FjwZNA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ps9rYh6PEeu3vta0FjwZNA" points="[740, 100, -643984, -643984]$[620, 100, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ptxjsB6PEeu3vta0FjwZNA" id="(0.0,0.2857142857142857)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ptxjsR6PEeu3vta0FjwZNA" id="(1.0,0.49586776859504134)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_xb8wUB6PEeu3vta0FjwZNA" type="Association_Edge" source="_p-e6MB6EEeu3vta0FjwZNA" target="_q164gB6EEeu3vta0FjwZNA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_xb9XYB6PEeu3vta0FjwZNA" type="Association_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_zGBFcB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_xb9XYR6PEeu3vta0FjwZNA" y="-19"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_xb9XYh6PEeu3vta0FjwZNA" type="Association_NameLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_zGV1kB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_xb9XYx6PEeu3vta0FjwZNA" x="1" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_xb9XZB6PEeu3vta0FjwZNA" type="Association_TargetRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_zG0WsB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_xb9XZR6PEeu3vta0FjwZNA" x="44" y="-29"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_xb9XZh6PEeu3vta0FjwZNA" type="Association_SourceRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_zHRCoB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_xb9XZx6PEeu3vta0FjwZNA" x="-36" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_xb9XaB6PEeu3vta0FjwZNA" type="Association_SourceMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_zHrSUB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_xb9XaR6PEeu3vta0FjwZNA" x="36" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_xb9Xah6PEeu3vta0FjwZNA" type="Association_TargetMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_zIJzcB6PEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_xb9Xax6PEeu3vta0FjwZNA" x="-36" y="-19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_xb8wUR6PEeu3vta0FjwZNA"/>
+    <element xmi:type="uml:Association" href="NASA_SGBD.uml#_xboAMB6PEeu3vta0FjwZNA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xb8wUh6PEeu3vta0FjwZNA" points="[740, 140, -643984, -643984]$[680, 140, -643984, -643984]$[680, 320, -643984, -643984]$[641, 320, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xc1hIB6PEeu3vta0FjwZNA" id="(0.0,0.5714285714285714)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xc1hIR6PEeu3vta0FjwZNA" id="(1.0,0.5673758865248227)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_BMZxUB6QEeu3vta0FjwZNA" type="Association_Edge" source="_p-e6MB6EEeu3vta0FjwZNA" target="_qny88B6EEeu3vta0FjwZNA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BMZxUx6QEeu3vta0FjwZNA" type="Association_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_C0Zp4B6QEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BMZxVB6QEeu3vta0FjwZNA" x="-1" y="-17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BMZxVR6QEeu3vta0FjwZNA" type="Association_NameLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_C0ty8B6QEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BMZxVh6QEeu3vta0FjwZNA" x="2" y="17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BMZxVx6QEeu3vta0FjwZNA" type="Association_TargetRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_C1E_UB6QEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BMZxWB6QEeu3vta0FjwZNA" x="31" y="-50"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BMaYYB6QEeu3vta0FjwZNA" type="Association_SourceRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_C1kHgB6QEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BMaYYR6QEeu3vta0FjwZNA" x="-34" y="17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BMaYYh6QEeu3vta0FjwZNA" type="Association_SourceMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_C2BagB6QEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BMaYYx6QEeu3vta0FjwZNA" x="35" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BMaYZB6QEeu3vta0FjwZNA" type="Association_TargetMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_C2ZN8B6QEeu3vta0FjwZNA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BMaYZR6QEeu3vta0FjwZNA" x="-36" y="-17"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BMZxUR6QEeu3vta0FjwZNA"/>
+    <element xmi:type="uml:Association" href="NASA_SGBD.uml#_BL-6kB6QEeu3vta0FjwZNA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BMZxUh6QEeu3vta0FjwZNA" points="[941, 120, -643984, -643984]$[1000, 120, -643984, -643984]$[1000, 280, -643984, -643984]$[920, 280, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BNcTIB6QEeu3vta0FjwZNA" id="(1.0,0.42857142857142855)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BNcTIR6QEeu3vta0FjwZNA" id="(1.0,0.3305785123966942)"/>
+  </edges>
+</notation:Diagram>
