@@ -25,4 +25,8 @@ npm install moment --save
 
 # Pour la detection des swipes
 nmp i -S react-native-swipe-gestures
+
+# Pour le menu déroulant 
+npm install --save react-native-drawer
+
 ```
