@@ -1,29 +1,17 @@
 //React Native
 import React, { Component, Fragment } from 'react';
-import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, Button } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity, Button } from 'react-native';
 //Third Party Modules
 import moment from "moment"; //format date and get curr date
 import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';//detect swipe gestures
 //Our Modules
-import PrintPhoto from "./Photo.js";
+import {PrintPhoto, PrintText} from "./Photo.js";
 import Menu from "./Menu.js";
 
 const API = 'https://api.nasa.gov/planetary/apod?'
 const KEY = 'api_key=JsDc3pN9hPNPG3QD4Yg9gl2yt3EaJlGi4iLe0GgA'
 //nombre de requetes max de l'ordre de 10/20 sans api_key
 
-const PrintTitle = props => (
-    <View style = {styles.titleView}>
-        <Text style = {styles.titleText}>{props.inputPhoto.title}</Text>
-        <Text style = {styles.dateText}>{props.inputPhoto.date}</Text>
-    </View>
-);
-
-const PrintDesc = props => (
-    <View style = {styles.descView}>
-        <Text style = {styles.baseText}>{props.inputPhoto.explanation}</Text>
-    </View>
-);
 
 class App extends Component {
     state = {
@@ -73,6 +61,25 @@ class App extends Component {
         this.setDate(currDate.subtract(1,'days'));
     }
 
+    mainApp() {
+        return(
+            <View style={{flex: 1,backgroundColor: '#D5CABD'}}>
+
+                <PrintPhoto inputPhoto={this.state.photo} />
+                <PrintText inputPhoto={this.state.photo} />
+
+                <View style={styles.buttonView}>
+                    <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeRight()}>
+                        <Text style={{fontSize: 30}}>{'<'}</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeLeft()}>
+                        <Text style={{fontSize: 30}}>{'>'}</Text>
+                    </TouchableOpacity>
+                </View>
+            </View>
+        );
+    }
+
     render() {
         const config = {
             velocityThreshold: 0.2,
@@ -80,55 +87,18 @@ class App extends Component {
         };
         return (
             <GestureRecognizer
-                // onSwipeLeft={(state) => this.swipeLeft()}
-                // onSwipeRight={(state) => this.swipeRight()}      // désactiver temporairement
+                onSwipeLeft={(state) => this.swipeLeft()}
+                onSwipeRight={(state) => this.swipeRight()}      // désactiver temporairement
                 style={{flex:1}}
                 config = {config}
                 >
-                <Menu/>                   
-                <View style={{flex: 1,backgroundColor: '#D5CABD'}}>
-                    <PrintPhoto inputPhoto={this.state.photo} />
-                    <ScrollView>
-                        <PrintTitle inputPhoto={this.state.photo} />
-                        <PrintDesc inputPhoto={this.state.photo} />
-                    </ScrollView>
-                    <View style={styles.buttonView}>
-                        <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeRight()}>
-                            <Text style={{fontSize: 30}}>{'<'}</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeLeft()}>
-                            <Text style={{fontSize: 30}}>{'>'}</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
+                {this.mainApp()}
             </GestureRecognizer>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    baseText: {
-        fontFamily: 'normal', //to change i think
-        fontSize: 20,
-        textAlign: 'justify',
-    },
-    titleText: {
-        fontFamily: 'normal', //to change i think
-        fontSize: 40,
-        fontWeight: 'bold',
-        textAlign: 'center',
-    },
-    dateText: {
-        textAlign: 'center',
-        fontSize: 20,
-        color: '#666',
-    },
-    descView: {
-        margin: 30,
-    },
-    titleView: {
-        marginTop: 30,
-    },
     buttonView: {
         position: 'absolute',
         left: 0,
@@ -138,6 +108,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
+        zIndex: 2,
     },
     sideButtons: {
         justifyContent: 'center',

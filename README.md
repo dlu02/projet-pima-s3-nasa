@@ -20,6 +20,9 @@
 ## Modules ajoutés
 
 ```bash
+#toujours penser a update
+npm update
+
 # Moment.js pour le formatage (et la récupération) des dates  
 npm install moment --save
 

@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { Text, 
     View, FlatList, TouchableOpacity, 
     Image, SafeAreaView } from 'react-native';
-import ic_menu from './img/list.png'
-import Drawer from 'react-native-drawer'
+import ic_menu from './img/list.png';
+import Drawer from 'react-native-drawer';
+import App from './App.js';
 console.disableYellowBox = true;    // hide warnings
 //LogBox.ignoreAllLogs(disable);
 
@@ -13,6 +14,8 @@ const menu = [
     { 'title': 'Tendances' },
     { 'title': 'Favoris' },
 ]
+
+const headerHeight = 53;
 
 export default class Menu extends Component {
 
@@ -25,9 +28,9 @@ export default class Menu extends Component {
         return (
             <View style={styles.menuContainer}>
                 <FlatList
-                    style={{ flex: 1.0 }}
                     data={menu}
                     extraData={this.state}
+                    contentContainerStyle = {{flex:1, justifyContent:'center'}}
                     renderItem={({ item, index }) => {
                         return (
                             <TouchableOpacity style={styles.menuTitleContainer}>
@@ -57,7 +60,7 @@ export default class Menu extends Component {
                     <Drawer
                         ref={(ref) => this.drawer = ref}
                         content={this.renderDrawer()}
-                        type='static'
+                        type='overlay'
                         tapToClose={true}
                         openDrawerOffset={0.35}
                         styles={drawerStyles}>
@@ -69,7 +72,22 @@ export default class Menu extends Component {
                                     <Image style={{ tintColor: 'white' }} source={ic_menu} />
                                 </TouchableOpacity>
                             </View>
-                            <View style={styles.menuButton} />
+                            <View style={styles.menuButton}>
+                                <TouchableOpacity
+                                    onPress={() => {}}>
+                                    <Image style={{ tintColor: 'white' }} source={ic_menu} />
+                                </TouchableOpacity>
+                            </View>
+                            <View style={styles.menuButton}>
+                                <TouchableOpacity
+                                    onPress={() => {}}>
+                                    <Image style={{ tintColor: 'white' }} source={ic_menu} />
+                                </TouchableOpacity>
+                            </View>
+                        </View>
+                        {/*Application view*/}
+                        <View style={styles.appContainer}>
+                            <App/>
                         </View>
                     </Drawer>
                 </View>
@@ -81,7 +99,7 @@ export default class Menu extends Component {
 const drawerStyles = {
     drawer: {
         flex: 1.0,
-        backgroundColor: 'black',
+        backgroundColor: 'rgba(0,0,0,0.3)',
     },
     main: {
         flex: 1.0,
@@ -92,16 +110,17 @@ const drawerStyles = {
 const styles = {
     mainContainer: {
         flex: 1.0,
-        backgroundColor: 'white',
+        backgroundColor: 'transparent',
     },
     safeAreaStyle:  {
-        flex: 0.08,     // pas très propre : le menu déroulant n'affiche qu'une rubrique
+        flex: 1,     // pas très propre : le menu déroulant n'affiche qu'une rubrique
         backgroundColor: 'black',
     },
     headerContainer: {
-        height: 53,
+        height: headerHeight,
         width : '100%',
         flexDirection: 'row',
+        justifyContent: 'space-between',
         position : 'absolute',
         //justifyContect: 'center',
         backgroundColor: 'rgb(52, 52, 52)',
@@ -120,6 +139,7 @@ const styles = {
         height: 60,
         width:'100%',
         flexDirection:'row',
+        marginVertical : 10,
     },
     menuTitle: {
         width:'100%',
@@ -127,5 +147,9 @@ const styles = {
         textAlign: 'center',
         fontSize: 20,
         alignSelf:'center',
+    },
+    appContainer: {
+        top: headerHeight,
+        flex: 1,
     }
 }
