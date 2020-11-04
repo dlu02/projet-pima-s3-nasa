@@ -1,11 +1,12 @@
 //React Native
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, Button } from 'react-native';
 //Third Party Modules
 import moment from "moment"; //format date and get curr date
 import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';//detect swipe gestures
 //Our Modules
 import PrintPhoto from "./Photo.js";
+import Menu from "./Menu.js";
 
 const API = 'https://api.nasa.gov/planetary/apod?'
 const KEY = 'api_key=JsDc3pN9hPNPG3QD4Yg9gl2yt3EaJlGi4iLe0GgA'
@@ -79,12 +80,13 @@ class App extends Component {
         };
         return (
             <GestureRecognizer
-                onSwipeLeft={(state) => this.swipeLeft()}
-                onSwipeRight={(state) => this.swipeRight()}
+                // onSwipeLeft={(state) => this.swipeLeft()}
+                // onSwipeRight={(state) => this.swipeRight()}      // désactiver temporairement
                 style={{flex:1}}
                 config = {config}
                 >
-                <View style={{flex: 1}}>
+                <Menu/>                   
+                <View style={{flex: 1,backgroundColor: '#D5CABD'}}>
                     <PrintPhoto inputPhoto={this.state.photo} />
                     <ScrollView>
                         <PrintTitle inputPhoto={this.state.photo} />
@@ -131,7 +133,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         left: 0,
         right: 0,
-        top: 0,
+        top: 50,
         bottom: 0,
         flexDirection: 'row',
         alignItems: 'center',
