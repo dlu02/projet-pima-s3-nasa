@@ -28,7 +28,10 @@ export default class Signin extends React.Component {
         <TouchableOpacity style={styles.signinBtn}>
           <Text style={styles.signinText}>Inscription</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.signinTextMargin}>  
+        <TouchableOpacity style={styles.signinTextMargin} 
+            onPress={() =>
+              this.props.navigation.navigate('Login')
+            }>  
           <Text style={styles.signinText}>Retour à la page de connexion</Text>
         </TouchableOpacity>
   
