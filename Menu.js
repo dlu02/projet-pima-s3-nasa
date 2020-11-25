@@ -3,8 +3,12 @@ import { Text,
     View, FlatList, TouchableOpacity, 
     Image, SafeAreaView } from 'react-native';
 import ic_menu from './img/list.png';
+import ic_calendar from './img/calendar.png';
+import ic_settings from './img/settings.png';
+
+
 import Drawer from 'react-native-drawer';
-import App from './App.js';
+import Home from './Home.js';
 console.disableYellowBox = true;    // hide warnings
 //LogBox.ignoreAllLogs(disable);
 
@@ -39,8 +43,10 @@ export default class Menu extends Component {
                                     {item.title}
                                 </Text>
                             </TouchableOpacity>
+
                         )
                     }} />
+                    
             </View>
         )
     }
@@ -75,19 +81,19 @@ export default class Menu extends Component {
                             <View style={styles.menuButton}>
                                 <TouchableOpacity
                                     onPress={() => {}}>
-                                    <Image style={{ tintColor: 'white' }} source={ic_menu} />
+                                    <Image style={{ tintColor: 'white',width:30 ,height:30}} source={ic_calendar} />
                                 </TouchableOpacity>
                             </View>
                             <View style={styles.menuButton}>
                                 <TouchableOpacity
                                     onPress={() => {}}>
-                                    <Image style={{ tintColor: 'white' }} source={ic_menu} />
+                                    <Image style={{ tintColor: 'white',width:20 ,height:30 }} source={ic_settings} />
                                 </TouchableOpacity>
                             </View>
                         </View>
                         {/*Application view*/}
                         <View style={styles.appContainer}>
-                            <App/>
+                            <Home/>
                         </View>
                     </Drawer>
                 </View>
