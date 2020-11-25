@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
-import App from './App.js';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Button } from 'react-native';
 
 export default class Login extends React.Component {
   state={
@@ -29,13 +28,19 @@ export default class Login extends React.Component {
         <TouchableOpacity style={styles.loginBtn}>
           <Text style={styles.loginText}>Connexion</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.loginTextMargin}>
+        <TouchableOpacity style={styles.loginTextMargin}
+            onPress={() =>
+              this.props.navigation.navigate('Signin')
+            }>
           <Text style={styles.loginText}>S'inscrire</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.loginTextMargin}>  
+        <TouchableOpacity style={styles.loginTextMargin} 
+            onPress={() =>
+              this.props.navigation.navigate('Menu')
+            }>
           <Text style={styles.loginText}>Continuer sans se connecter</Text>
         </TouchableOpacity>
-  
+
       </View>
     );
   }
