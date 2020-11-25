@@ -4,7 +4,7 @@ import App from './App.js';
 
 export default class Login extends React.Component {
   state={
-    email:"",
+    username:"",
     password:""
   }
   render(){
@@ -14,9 +14,9 @@ export default class Login extends React.Component {
         <View style={styles.inputView} >
           <TextInput  
             style={styles.inputText}
-            placeholder="Email" 
+            placeholder="Nom d'utilisateur" 
             placeholderTextColor="#003f5c"
-            onChangeText={text => this.setState({email:text})}/>
+            onChangeText={text => this.setState({lousernamegin:text})}/>
         </View>
         <View style={styles.inputView} >
           <TextInput  
@@ -26,16 +26,13 @@ export default class Login extends React.Component {
             placeholderTextColor="#003f5c"
             onChangeText={text => this.setState({password:text})}/>
         </View>
-        <TouchableOpacity>
-          <Text style={styles.forgot}>Mot de passe oublié ?</Text>
-        </TouchableOpacity>
         <TouchableOpacity style={styles.loginBtn}>
           <Text style={styles.loginText}>Connexion</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity style={styles.loginTextMargin}>
           <Text style={styles.loginText}>S'inscrire</Text>
         </TouchableOpacity>
-        <TouchableOpacity>  
+        <TouchableOpacity style={styles.loginTextMargin}>  
           <Text style={styles.loginText}>Continuer sans se connecter</Text>
         </TouchableOpacity>
   
@@ -70,10 +67,6 @@ const styles = StyleSheet.create({
     height:50,
     color:"white"
   },
-  forgot:{
-    color:"white",
-    fontSize:11
-  },
   loginBtn:{
     width:"80%",
     backgroundColor:"#fb5b5a",
@@ -86,5 +79,9 @@ const styles = StyleSheet.create({
   },
   loginText:{
     color:"white"
+  },
+
+  loginTextMargin:{
+    marginTop:15
   }
 });
