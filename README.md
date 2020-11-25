@@ -32,4 +32,9 @@ npm i -S react-native-swipe-gestures
 # Pour le menu déroulant 
 npm install --save react-native-drawer
 
+# installer le module react-navigation, pour pouvoir naviguer entre les pages
+npm install @react-navigation/native
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+
 ```
