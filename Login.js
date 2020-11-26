@@ -15,7 +15,7 @@ export default class Login extends React.Component {
             style={styles.inputText}
             placeholder="Nom d'utilisateur" 
             placeholderTextColor="#003f5c"
-            onChangeText={text => this.setState({lousernamegin:text})}/>
+            onChangeText={text => this.setState({username:text})}/>
         </View>
         <View style={styles.inputView} >
           <TextInput  
