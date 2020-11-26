@@ -6,6 +6,7 @@ import moment from "moment"; //format date and get curr date
 import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';//detect swipe gestures
 //Our Modules
 import {PrintPhoto, PrintText} from "./Photo.js";
+import { ScrollView } from 'react-native-gesture-handler';
 
 const API = 'https://api.nasa.gov/planetary/apod?'
 const KEY = 'api_key=JsDc3pN9hPNPG3QD4Yg9gl2yt3EaJlGi4iLe0GgA'
@@ -65,7 +66,9 @@ class Home extends Component {
             <View style={{flex: 1,backgroundColor: '#D5CABD'}}>
 
                 <PrintPhoto inputPhoto={this.state.photo} />
-                <PrintText inputPhoto={this.state.photo} />
+                <ScrollView>
+                    <PrintText inputPhoto={this.state.photo} />
+                </ScrollView>
 
                 <View style={styles.buttonView}>
                     <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeRight()}>
