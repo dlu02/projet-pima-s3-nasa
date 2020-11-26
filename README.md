@@ -29,7 +29,7 @@ npm install moment --save
 # Pour la detection des swipes
 npm i -S react-native-swipe-gestures
 
-# Pour le menu déroulant 
+# Pour le menu déroulant
 npm install --save react-native-drawer
 
 # installer le module react-navigation, pour pouvoir naviguer entre les pages
@@ -38,3 +38,5 @@ npm install react-native-reanimated react-native-gesture-handler react-native-sc
 
 
 ```
+## Base de données distante
+Dépôt Gitlab séparé : [nasaPIMA côté serveur](https://gitlab.com/dlu02/nasapima-cote-serveur)
