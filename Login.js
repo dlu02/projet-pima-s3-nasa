@@ -1,11 +1,33 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Button,  ToastAndroid } from 'react-native';
+
+const API = 'https://perso.dlu02.ovh/pima_S3/login.php?'
+//API php
 
 export default class Login extends React.Component {
   state={
     username:"",
-    password:""
+    password:"",
+    error_code:""
   }
+
+  login = () => {
+    fetch(API + `pseudo=${this.state.username}&`+`mdp=${this.state.password}`) 
+        .then(response => response.json())
+        .then(responsejson => { return this.redirection(responsejson.code_retour)})
+        .catch((error) => {console.error(error);console.log("Probleme dans l'api call");} );
+  }
+
+  redirection = (code_retour: string) => {
+    if (code_retour === "S2"){
+      ToastAndroid.show("Succès !", ToastAndroid.SHORT);
+      this.props.navigation.navigate('Menu')
+    }
+    else {
+      ToastAndroid.show("Echec ! Identifiants incorrects", ToastAndroid.SHORT);
+    }
+  }
+
   render(){
     return (
       <View style={styles.container}>
@@ -25,7 +47,8 @@ export default class Login extends React.Component {
             placeholderTextColor="#003f5c"
             onChangeText={text => this.setState({password:text})}/>
         </View>
-        <TouchableOpacity style={styles.loginBtn}>
+        <TouchableOpacity style={styles.loginBtn} onPress={() =>
+              this.login()}>
           <Text style={styles.loginText}>Connexion</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.loginTextMargin}

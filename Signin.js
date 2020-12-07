@@ -1,11 +1,41 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Button, ToastAndroid } from 'react-native';
+
+const API = 'https://perso.dlu02.ovh/pima_S3/request.php?'
+//API php
 
 export default class Signin extends React.Component {
   state={
     username:"",
-    password:""
+    password:"",
+    error_code:""
   }
+
+  request = () => {
+    fetch(API + `pseudo=${this.state.username}&`+`mdp=${this.state.password}`) 
+        .then(response => response.json())
+        .then(responsejson => { return this.redirection(responsejson.code_retour)})
+        .catch((error) => {console.error(error);console.log("Probleme dans l'api call");} );
+  }
+
+  redirection = (code_retour: string) => {
+    if (code_retour === "S1"){
+      ToastAndroid.show("Succès ! Vous allez être redirigés vers la page de connexion.", ToastAndroid.SHORT);
+      this.props.navigation.navigate('Login')
+    }
+    else {
+      ToastAndroid.show("Echec ! Identifiants déjà utilisés", ToastAndroid.SHORT);
+    }
+  }
+
+  handleUsernameChange = (usn: string) => {
+    this.setState({username: usn})
+  }
+
+  handlePasswordChange = (pwd: string) => {
+    this.setState({password: pwd})
+  }
+
   render(){
     return (
       <View style={styles.container}>
@@ -15,7 +45,8 @@ export default class Signin extends React.Component {
             style={styles.inputText}
             placeholder="Nom d'utilisateur" 
             placeholderTextColor="#003f5c"
-            onChangeText={text => this.setState({username:text})}/>
+            onChangeText={this.handleUsernameChange}
+            value={this.state.username}/>
         </View>
         <View style={styles.inputView} >
           <TextInput  
@@ -23,11 +54,11 @@ export default class Signin extends React.Component {
             style={styles.inputText}
             placeholder="Mot de passe" 
             placeholderTextColor="#003f5c"
-            onChangeText={text => this.setState({password:text})}/>
+            onChangeText={this.handlePasswordChange}
+            value={this.state.password}/>
         </View>
-        <TouchableOpacity style={styles.signinBtn}>
-          <Text style={styles.signinText}>Inscription</Text>
-        </TouchableOpacity>
+        <Button style={styles.signinBtn} onPress={this.request} title="Inscription">
+        </Button>
         <TouchableOpacity style={styles.signinTextMargin} 
             onPress={() =>
               this.props.navigation.navigate('Login')
