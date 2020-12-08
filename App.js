@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import MenuScreen from './Menu';
 import LoginScreen from './Login';
 import SigninScreen from './Signin';
+import GalerieScreen from './Galerie';
 
 
 const Stack = createStackNavigator();
@@ -30,6 +31,11 @@ export default class App extends React.Component {
             component={MenuScreen}
             options={{headerShown: false}}
           />
+          <Stack.Screen
+            name="Galerie"
+            component={GalerieScreen}
+            options={{headerShown: false}}
+          />         
         </Stack.Navigator>
       </NavigationContainer>
     );

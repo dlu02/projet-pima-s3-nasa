@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Text, View, Image, StyleSheet, ScrollView } from 'react-native';
-
 //une horreur, il y a (rarement) des APOD qui ne sont pas des images.
 const PrintPhoto = props => (
     <View>

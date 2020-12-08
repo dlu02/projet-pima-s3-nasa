@@ -5,29 +5,21 @@ import { Text, View, StyleSheet, TouchableOpacity, Button, ToastAndroid, Image, 
 import moment from "moment"; //format date and get curr date
 import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';//detect swipe gestures
 //Our Modules
-import {PrintPhoto, PrintText} from "./Photo.js";
+import {PrintPhoto} from "./PhotoGallery.js";
 import { ScrollView } from 'react-native-gesture-handler';
 import ic_like from './img/like.png';
-import { roundToNearestPixel } from 'react-native/Libraries/Utilities/PixelRatio';
-import {username2} from './Menu.js';
 
 
 const API = 'https://api.nasa.gov/planetary/apod?'
 const KEY = 'api_key=JsDc3pN9hPNPG3QD4Yg9gl2yt3EaJlGi4iLe0GgA'
 //nombre de requetes max de l'ordre de 10/20 sans api_key
 
-const API2 = 'https://perso.dlu02.ovh/pima_S3/push_image.php?'
-//API php
-
-class Home extends React.Component {
+class Galerie extends React.Component {
     state = {
         date: moment(),
-        photo : "",
-        error_code: ""
+        photo : ""
     }
     
-    
-
     formatDate = moment => {
         let y = moment.year();
         let m = moment.month() + 1; /* 0 indexed months */
@@ -56,65 +48,12 @@ class Home extends React.Component {
     componentDidMount() {
         this.setDate(moment());
     }
-
-    //finger go right to left on the screen
-    swipeLeft() {
-        let currDate = this.getDate();
-        let newDate = moment.min(moment(), currDate.add(1,'days'));
-        this.setDate(newDate);
-    }
-
-    //finger go left to right on the screen
-    swipeRight() {
-        let currDate = this.getDate();
-        this.setDate(currDate.subtract(1,'days'));
-    }
-
-    like = () => {
-        fetch(API2 + `pseudo=${username2}&`+`image_id=${this.formatDate(this.state.date)}`) 
-        .then(response => response.json())
-        .then(responsejson => { return this.redirection(responsejson.code_retour)})
-        .catch((error) => {console.error(error);console.log("Probleme dans l'api call");} )
-    }
-
-    // ButtonLike (props) {
-    //     return <Image style={{ tintColor: 'blue',width:30 ,height:30}} source={ic_like} />
-    // }
-
-    redirection = (code_retour: string) => {
-        if (code_retour === "S3"){
-          ToastAndroid.show("Vous aimez cette image.", ToastAndroid.SHORT);
-        //   return <ButtonLike />;
-        }
-        else {
-          ToastAndroid.show("Echec ! Image déjà likée.", ToastAndroid.SHORT);
-        }
-      }    
-
     mainApp() {
         return(
             <View style={{flex: 1,backgroundColor: '#D5CABD'}}>
 
                 <PrintPhoto inputPhoto={this.state.photo} />
-                <View style = {styles.buttonLike}>
-                    <TouchableOpacity onPress={this.like}>
-                        <Image source={ic_like} style={{ tintColor: 'white',width:30 ,height:30}} />
-                    </TouchableOpacity>
-                </View>
-                <ScrollView>
-                    <PrintText inputPhoto={this.state.photo} />
-                </ScrollView>
-
-                <View style={styles.buttonView}>
-                    <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeRight()}>
-                        <Text style={{fontSize: 30}}>{'<'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeLeft()}>
-                        <Text style={{fontSize: 30}}>{'>'}</Text>
-                    </TouchableOpacity>
-                </View>
             </View>
-
         );
     }
 
@@ -135,6 +74,7 @@ class Home extends React.Component {
         );
     }
 }
+
 
 const styles = StyleSheet.create({
     buttonView: {
@@ -167,4 +107,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Home;
+export default Galerie;

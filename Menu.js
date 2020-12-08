@@ -12,6 +12,8 @@ import Home from './Home.js';
 console.disableYellowBox = true;    // hide warnings
 //LogBox.ignoreAllLogs(disable);
 
+export var username2 = ""
+
 const menu = [
     { 'title': 'Accueil' },
     { 'title': 'Galerie' },
@@ -37,7 +39,7 @@ export default class Menu extends Component {
                     contentContainerStyle = {{flex:1, justifyContent:'center'}}
                     renderItem={({ item, index }) => {
                         return (
-                            <TouchableOpacity style={styles.menuTitleContainer}>
+                            <TouchableOpacity style={styles.menuTitleContainer} onPress={() => this.affichageSousMenu(item.title)}>
                                 <Text style={styles.menuTitle}
                                     key={index}>
                                     {item.title}
@@ -51,6 +53,23 @@ export default class Menu extends Component {
         )
     }
 
+    affichageSousMenu(title){
+        switch (title) {
+            case "Accueil":
+                this.props.navigation.navigate('Menu')
+                break;
+            case "Galerie":
+                this.props.navigation.navigate('Galerie')
+                break;
+            case "Tendances":
+                this.props.navigation.navigate('Menu')
+                break;
+            default:
+                this.props.navigation.navigate('Menu')
+                break;
+        }
+    }
+
     openDrawer() {
         this.drawer.open()
     }
@@ -60,6 +79,8 @@ export default class Menu extends Component {
     }
 
     render() {
+        const username = this.props.route.params.username;
+        username2 = username;
         return (
             <SafeAreaView style={styles.safeAreaStyle}>
                 <View style={styles.mainContainer}>
@@ -81,14 +102,11 @@ export default class Menu extends Component {
                             <View style={styles.menuButton}>
                                 <TouchableOpacity
                                     onPress={() => {}}>
-                                    <Image style={{ tintColor: 'white',width:30 ,height:30}} source={ic_calendar} />
+                                    <Image style={{position: 'absolute', top: -15, left: 0.45, tintColor: 'white',width:30 ,height:30}} source={ic_calendar} />
                                 </TouchableOpacity>
                             </View>
                             <View style={styles.menuButton}>
-                                <TouchableOpacity
-                                    onPress={() => {}}>
-                                    <Image style={{ tintColor: 'white',width:20 ,height:30 }} source={ic_settings} />
-                                </TouchableOpacity>
+                                <Text style={styles.username}>{username2}</Text>
                             </View>
                         </View>
                         {/*Application view*/}
@@ -157,5 +175,9 @@ const styles = {
     appContainer: {
         top: headerHeight,
         flex: 1,
+    },
+    username: {
+        fontSize: 18,
+        color: 'white',
     }
 }

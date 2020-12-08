@@ -21,7 +21,7 @@ export default class Login extends React.Component {
   redirection = (code_retour: string) => {
     if (code_retour === "S2"){
       ToastAndroid.show("Succès !", ToastAndroid.SHORT);
-      this.props.navigation.navigate('Menu')
+      this.props.navigation.navigate('Menu',{username: this.state.username})
     }
     else {
       ToastAndroid.show("Echec ! Identifiants incorrects", ToastAndroid.SHORT);
@@ -59,7 +59,7 @@ export default class Login extends React.Component {
         </TouchableOpacity>
         <TouchableOpacity style={styles.loginTextMargin} 
             onPress={() =>
-              this.props.navigation.navigate('Menu')
+              this.props.navigation.navigate('Menu',{username: ""})
             }>
           <Text style={styles.loginText}>Continuer sans se connecter</Text>
         </TouchableOpacity>
