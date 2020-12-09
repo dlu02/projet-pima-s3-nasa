@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Text, 
     View, FlatList, TouchableOpacity, 
     Image, SafeAreaView } from 'react-native';
-import ic_menu from './img/list.png';
-import ic_calendar from './img/calendar.png';
-import ic_settings from './img/settings.png';
+import ic_menu from './img/menu.png';
 import DatePicker from 'react-native-datepicker';
 import moment from "moment"; //format date and get curr date
 
@@ -107,7 +105,7 @@ export default class Menu extends Component {
                             <View style={styles.menuButton}>
                                 <TouchableOpacity
                                     onPress={this.openDrawer.bind(this)}>
-                                    <Image style={{ tintColor: 'white' }} source={ic_menu} />
+                                    <Image style={{ width: 16,height: 14.5,tintColor: 'white' }} source={ic_menu} />
                                 </TouchableOpacity>
                             </View>
                             <DatePicker
@@ -208,7 +206,7 @@ const styles = {
         flex: 1,
     },
     username: {
-        fontSize: 18,
+        fontSize: 16,
         color: 'white',
     },
     datePickerStyle: {

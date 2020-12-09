@@ -1,14 +1,13 @@
 //React Native
-import React, { Component, Fragment } from 'react';
-import { Text, View, StyleSheet, TouchableOpacity, Button, ToastAndroid, Image, TouchableHighlight } from 'react-native';
+import React from 'react';
+import { Text, View, StyleSheet, TouchableOpacity, ToastAndroid, Image} from 'react-native';
 //Third Party Modules
 import moment from "moment"; //format date and get curr date
-import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';//detect swipe gestures
+import GestureRecognizer from 'react-native-swipe-gestures';//detect swipe gestures
 //Our Modules
 import {PrintPhoto, PrintText} from "./Photo.js";
 import { ScrollView } from 'react-native-gesture-handler';
 import ic_like from './img/like.png';
-import { roundToNearestPixel } from 'react-native/Libraries/Utilities/PixelRatio';
 import {username2} from './Menu.js';
 
 
@@ -95,7 +94,7 @@ class Home extends React.Component {
 
     mainApp() {
         return(
-            <View style={{flex: 1,backgroundColor: '#D5CABD'}}>
+            <View style={{flex: 1,backgroundColor: '#003f5c'}}>
 
                 <PrintPhoto inputPhoto={this.state.photo} />
                 <View style = {styles.buttonLike}>
@@ -109,10 +108,10 @@ class Home extends React.Component {
 
                 <View style={styles.buttonView}>
                     <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeRight()}>
-                        <Text style={{fontSize: 30}}>{'<'}</Text>
+                        <Text style={{color: 'white',fontSize: 30}}>{'<'}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.sideButtons} onPressIn={() => this.swipeLeft()}>
-                        <Text style={{fontSize: 30}}>{'>'}</Text>
+                        <Text style={{color: 'white',fontSize: 30}}>{'>'}</Text>
                     </TouchableOpacity>
                 </View>
             </View>

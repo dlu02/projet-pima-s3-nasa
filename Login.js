@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Button,  ToastAndroid } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity,  ToastAndroid } from 'react-native';
 
 const API = 'https://perso.dlu02.ovh/pima_S3/login.php?'
 //API php

@@ -1,7 +1,3 @@
-// Example of Grid Image Gallery in React Native
-// https://aboutreact.com/grid-image-gallery/
-
-// import React in our code
 import React, {useState, useEffect} from 'react';
 
 // import all the components we are going to use
@@ -27,7 +23,7 @@ const App = () => {
 
   const createArray = () => {
     var items = [];
-    for (let i =6 ; i<=70 ; i++){
+    for (let i =0 ; i<=70 ; i++){
       items.push({id: i, src: 'https://perso.dlu02.ovh/pima_S3/gallery.php?count=' + (i) })
     };
     return items

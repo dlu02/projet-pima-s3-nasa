@@ -1,9 +1,4 @@
-// Example of Grid Image Gallery in React Native
-// https://aboutreact.com/grid-image-gallery/
-
-// import React in our code
 import React, {useState, useEffect} from 'react';
-import { useRoute } from '@react-navigation/native';
 
 // import all the components we are going to use
 import {

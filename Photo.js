@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Text, View, Image, StyleSheet, ScrollView } from 'react-native';
 import not_found from './img/not-found.jpg'
 
@@ -37,20 +37,22 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     baseText: {
-        fontFamily: 'normal', //to change i think
+        fontFamily: 'normal',
         fontSize: 20,
         textAlign: 'justify',
+        color: 'white',
     },
     titleText: {
         fontFamily: 'normal', //to change i think
         fontSize: 40,
         fontWeight: 'bold',
         textAlign: 'center',
+        color: 'white',
     },
     dateText: {
         textAlign: 'center',
         fontSize: 20,
-        color: '#666',
+        color: '#FFF',
     },
     descView: {
         margin: 30,
