@@ -64,7 +64,7 @@ export default class Menu extends Component {
                 this.props.navigation.navigate('Galerie')
                 break;
             case "Tendances":
-                this.props.navigation.navigate('Menu')
+                this.props.navigation.navigate('Tendances')
                 break;
 			case "Déconnexion":
                 this.props.navigation.navigate('Login');

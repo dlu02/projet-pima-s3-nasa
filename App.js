@@ -7,6 +7,7 @@ import LoginScreen from './Login';
 import SigninScreen from './Signin';
 import GalerieScreen from './Galerie';
 import FavorisScreen from './Favoris';
+import TendancesScreen from './Tendances';
 
 
 const Stack = createStackNavigator();
@@ -41,7 +42,12 @@ export default class App extends React.Component {
             name="Favoris"
             component={FavorisScreen}
             options={{headerShown: false}}
-          />    
+          /> 
+          <Stack.Screen
+            name="Tendances"
+            component={TendancesScreen}
+            options={{headerShown: false}}
+          />       
         </Stack.Navigator>
       </NavigationContainer>
     );
