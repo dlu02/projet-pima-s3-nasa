@@ -27,8 +27,8 @@ const App = () => {
 
   const createArray = () => {
     var items = [];
-    for (let i =0 ; i<30 ; i++){
-      items.push({id: i, src: 'https://perso.dlu02.ovh/pima_S3/gallery.php?count=' + i })
+    for (let i =6 ; i<=70 ; i++){
+      items.push({id: i, src: 'https://perso.dlu02.ovh/pima_S3/gallery.php?count=' + (i) })
     };
     return items
   }
@@ -82,7 +82,7 @@ const App = () => {
       ) : (
         <View style={styles.container}>
           <Text style={styles.titleStyle}>
-            Grid Image Gallery in React Native
+            Galerie d'images NASA
           </Text>
           <FlatList
             data={dataSource}
@@ -123,7 +123,8 @@ const styles = StyleSheet.create({
     padding: 16,
     fontSize: 20,
     color: 'white',
-    backgroundColor: 'green',
+    textAlign: 'center',
+    backgroundColor: 'rgb(52, 52, 52)',
   },
   imageContainerStyle: {
     flex: 1,
