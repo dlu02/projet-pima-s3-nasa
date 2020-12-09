@@ -6,6 +6,7 @@ import MenuScreen from './Menu';
 import LoginScreen from './Login';
 import SigninScreen from './Signin';
 import GalerieScreen from './Galerie';
+import FavorisScreen from './Favoris';
 
 
 const Stack = createStackNavigator();
@@ -35,7 +36,12 @@ export default class App extends React.Component {
             name="Galerie"
             component={GalerieScreen}
             options={{headerShown: false}}
-          />         
+          />
+          <Stack.Screen
+            name="Favoris"
+            component={FavorisScreen}
+            options={{headerShown: false}}
+          />    
         </Stack.Navigator>
       </NavigationContainer>
     );

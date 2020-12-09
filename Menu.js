@@ -71,6 +71,10 @@ export default class Menu extends Component {
 				this.props.route.params.username = '';
 				this.props.route.params.password = '';
                 break;
+            case "Favoris":
+                var usn = this.props.route.params.username;
+                this.props.navigation.navigate('Favoris',{username: usn})
+                break;
             default:
                 this.props.navigation.navigate('Menu')
                 break;
