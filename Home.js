@@ -68,7 +68,8 @@ class Home extends React.Component {
     //finger go left to right on the screen
     swipeRight() {
         let currDate = this.getDate();
-        this.setDate(currDate.subtract(1,'days'));
+        let newDate = moment.max(currDate.subtract(1,'days'), moment("20-06-1995","DD-MM-YYYY"));
+        this.setDate(newDate);
     }
 
     like = () => {

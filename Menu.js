@@ -106,7 +106,7 @@ export default class Menu extends Component {
                                 mode="date" // The enum of date, datetime and time
                                 placeholder="select date"
                                 format="DD-MM-YYYY"
-                                minDate="16-06-1995"
+                                minDate="20-06-1995"
                                 maxDate={moment().format("DD-MM-YYYY")}
                                 confirmBtnText="Confimer"
                                 cancelBtnText="Annuler"
