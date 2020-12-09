@@ -36,6 +36,8 @@ npm install --save react-native-drawer
 npm install @react-navigation/native
 npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view @react-navigation/stack
 
+# Pour le datepicker
+npm install react-native-datepicker --save
 
 ```
 ## Base de données distante

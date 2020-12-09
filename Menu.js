@@ -5,7 +5,8 @@ import { Text,
 import ic_menu from './img/list.png';
 import ic_calendar from './img/calendar.png';
 import ic_settings from './img/settings.png';
-
+import DatePicker from 'react-native-datepicker';
+import moment from "moment"; //format date and get curr date
 
 import Drawer from 'react-native-drawer';
 import Home from './Home.js';
@@ -99,19 +100,39 @@ export default class Menu extends Component {
                                     <Image style={{ tintColor: 'white' }} source={ic_menu} />
                                 </TouchableOpacity>
                             </View>
-                            <View style={styles.menuButton}>
-                                <TouchableOpacity
-                                    onPress={() => {}}>
-                                    <Image style={{position: 'absolute', top: -15, left: 0.45, tintColor: 'white',width:30 ,height:30}} source={ic_calendar} />
-                                </TouchableOpacity>
-                            </View>
+                            <DatePicker
+                                style={styles.datePickerStyle}
+                                date={moment().format("DD-MM-YYYY")} // Initial date from state
+                                mode="date" // The enum of date, datetime and time
+                                placeholder="select date"
+                                format="DD-MM-YYYY"
+                                minDate="16-06-1995"
+                                maxDate={moment().format("DD-MM-YYYY")}
+                                confirmBtnText="Confimer"
+                                cancelBtnText="Annuler"
+                                customStyles={{
+                                    dateIcon: {
+                                        //display: 'none',
+                                        position: 'absolute',
+                                        left: 0,
+                                        top: 4,
+                                        marginLeft: 0,
+                                    },
+                                    dateInput: {
+                                        marginLeft: 36,
+                                    },
+                                }}
+                                onDateChange={(date) => {
+                                    this.child.setDate(moment(date,"DD-MM-YYYY"));
+                                }}
+                            />
                             <View style={styles.menuButton}>
                                 <Text style={styles.username}>{username2}</Text>
                             </View>
                         </View>
                         {/*Application view*/}
                         <View style={styles.appContainer}>
-                            <Home/>
+                            <Home ref={ (child) => { this.child = child; }}/>
                         </View>
                     </Drawer>
                 </View>
@@ -179,5 +200,9 @@ const styles = {
     username: {
         fontSize: 18,
         color: 'white',
+    },
+    datePickerStyle: {
+        width: 200,
+        marginTop: 7,
     }
 }

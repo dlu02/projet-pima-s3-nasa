@@ -36,6 +36,7 @@ class Home extends React.Component {
     }
 
     setDate(moment) {
+        console.log("setDate " + moment.format("DD-MM-YYYY") + "\n");
         this.setState({date: moment});
         //date changed => update photo
         this.getPhoto(this.formatDate(moment));
