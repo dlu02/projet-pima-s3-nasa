@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { Text, View, Image, StyleSheet, ScrollView } from 'react-native';
-//une horreur, il y a (rarement) des APOD qui ne sont pas des images.
+import not_found from './img/not-found.jpg'
+
 const PrintPhoto = props => (
     <View>
         { props.inputPhoto.media_type == "image" 
             ?
             <Image source = {{uri:props.inputPhoto.url}} style = {styles.basePhoto}/>
             :
-            <View style = {styles.basePhoto}>
-              <Text style = {styles.replacementText}>{`Media is not an Image.\n Link : \n ${props.inputPhoto.url}`}</Text>
+            <View style = {{alignItems: 'center'}}>
+                <Image source = {not_found} style = {{height: 300, aspectRatio : 3/2}}/>
             </View>
         }
     </View>
