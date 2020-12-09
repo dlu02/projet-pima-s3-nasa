@@ -67,7 +67,9 @@ export default class Menu extends Component {
                 this.props.navigation.navigate('Menu')
                 break;
 			case "Déconnexion":
-                this.props.navigation.navigate('Login')
+                this.props.navigation.navigate('Login');
+				this.props.route.params.username = '';
+				this.props.route.params.password = '';
                 break;
             default:
                 this.props.navigation.navigate('Menu')
