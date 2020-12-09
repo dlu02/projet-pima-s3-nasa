@@ -20,6 +20,7 @@ const menu = [
     { 'title': 'Galerie' },
     { 'title': 'Tendances' },
     { 'title': 'Favoris' },
+	{ 'title': 'Déconnexion' },
 ]
 
 const headerHeight = 53;
@@ -64,6 +65,9 @@ export default class Menu extends Component {
                 break;
             case "Tendances":
                 this.props.navigation.navigate('Menu')
+                break;
+			case "Déconnexion":
+                this.props.navigation.navigate('Login')
                 break;
             default:
                 this.props.navigation.navigate('Menu')
