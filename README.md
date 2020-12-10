@@ -39,6 +39,11 @@ npm install react-native-reanimated react-native-gesture-handler react-native-sc
 # Pour le datepicker
 npm install react-native-datepicker --save
 
+# Pour la galerie
+npm install --save react-native-fast-image
+
+# A la fin
+npm update
 ```
 ## Base de données distante
 Dépôt Gitlab séparé : [nasaPIMA côté serveur](https://gitlab.com/dlu02/nasapima-cote-serveur)
