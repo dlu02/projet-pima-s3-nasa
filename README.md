@@ -46,4 +46,4 @@ npm install --save react-native-fast-image
 npm update
 ```
 ## Base de données distante
-Dépôt Gitlab séparé : [nasaPIMA côté serveur](https://github.com/dlu02/nasapima-backend)
+Dépôt Github séparé : [nasaPIMA côté serveur](https://github.com/dlu02/nasapima-backend)
